@@ -20,7 +20,7 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 * Sign up for a [free account](http://editor.stamplay.com/apps) on Stamplay.
 * A Github account
 * NPM installed
-* [https://stamplay.com/docs/rest-api](REST API DOC)
+* Stamplay [https://stamplay.com/docs/rest-api](REST API Reference)
 
 -----------------------
 ## 1. When a user signup, send him a welcome email
@@ -40,10 +40,10 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 * Enable Github signup for users
 	* Create a Github app [https://github.com/settings/applications](https://github.com/settings/applications)
 	* Fill the "Authorized Redirect URIs" with this URL **https://[YOURAPPID].stamplayapp.com/auth/v0/github/callback**
-* Install stamplay command line tool [https://stamplay.com/docs/hosting](https://stamplay.com/docs/hosting)
+* Install stamplay command line tool ```npm install -g stamplay cli```
 * Init the project and copy all the frontend assets from this project
 * Open app.js, find the Stamplay JS SDK initialization and edit it so that it works with your app
-* Deploy frontend with Stamplay command line tool
+* Deploy frontend with Stamplay command line tool [https://stamplay.com/docs/hosting](https://stamplay.com/docs/hosting)
 
 
 -----------------------
