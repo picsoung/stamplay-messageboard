@@ -6,8 +6,8 @@ A realtime message board powered by Stamplay for [http://speedhack.io](speedhack
 Welcome to the Stamplay Speedhack Challenge. Use Stamplay to quickly build a full featured realtime message board in 15 minutes. The challenge is splitted into parts which require the implementation of user stories (user can signup and login, user publishes a new messages, UI updates in realtime). 
 
 Expected outcome:
-Fail: The app deployed isn’t working properly.
-Pass: The app deployed does let users post a message. There are some bonus sub-challenges included in the project. The more bonus sub-challenges completed the better the ranking for the team!
+* Fail: The app deployed isn’t working properly.
+* Pass: The app deployed does let users post a message. There are some bonus sub-challenges included in the project. The more bonus sub-challenges completed the better the ranking for the team!
 
 At [Stamplay](https://stamplay.com) we love events where the hacker ethos of developers spread all over the place. This events cultivate communities where aspiring hackers have the opportunity to learn, build, and share their creations with the world. This is a realtime message board built with Stamplay and Pusher with client-side only code.
 
@@ -35,7 +35,7 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 -----------------------
 ## 2. Setup Github login, deploy frontend
 
-![Github OAuth](http://blog.stamplay.com/wp-content/uploads/2014/09/Schermata-2014-09-09-alle-16.27.56.png "Github OAuth")
+![Github OAuth](http://speedhack.stamplayapp.com/img/github_screenshot.png "Github OAuth")
 
 * Enable Github signup for users
 	* Create a Github app [https://github.com/settings/applications](https://github.com/settings/applications)
@@ -73,9 +73,11 @@ After completing this Stamplay will instantly expose REST APIs for our new resou
 			avatar | {{coinstance.avatar}}
 			comment | {{coinstance.comment}}
 			dt_create | {{coinstance.dt_create}}
+```
 
 * Open app.js and setup pusher to work with your app
-
+* Deploy again your frontend
+* Check if you're UI is updating in realtime after a new message get published
 
 You're all set, congrats!
 
