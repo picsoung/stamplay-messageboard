@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>SPEEDHACK CHALLENGE</title>
+  <!-- CSS  -->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>    
+    <nav class="blue-grey darken-4">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo" style="padding-top:10px">
+          <img style="width:100px" src="http://speedhack.io/img/speedhack_yellow.png" alt="">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="https://stamplay.com/docs/main" target="_blank">Docs</a></li>          
+          <li><a href="https://stamplay.com" target="_blank">Stamplay</a></li>          
+          <li><a href="https://github.com/Stamplay" target="_blank">Github</a></li>          
+          <li><a href="/auth/v0/logout" style="display:none" class="logged-content">Logout</a></li>          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Main Section  -->
+  <main>          
+    <section style="padding-top:50px">
+      
+      <div class="container">
+
+        <div class="row center">
+          <div class="col s12">
+            <h3>Stamplay message board</h3>
+            <h6>An app to test your skills at Speedhack.io</h6>
+          </div>
+        </div>        
+
+        <div class="row guest-content">
+          <div class="col s6">
+            <p>
+              <a id="login-button" class="btn-large z-depth-1 grey darken-3">
+                <i class="fa fa-github" style="margin-right:5px;"></i>Login with Github
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <form class="col s6">
+            <div class="row">
+              <div class="input-field col s6" id="tofocus">
+                <textarea id="console-input" class="materialize-textarea" disabled></textarea>                
+                <label id="console-message">Please signup/login to post messages.</label>
+              </div>
+            </div>
+          </form>          
+          <div class="col s6 m6" id="feed-stream"></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+      
+  <footer class="page-footer blue-grey darken-4">
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <i class="fa fa-heart"></i> by Stamplay
+      <a class="grey-text text-lighten-4 right" href="https://stamplay.com">For Developers by Developers.</a>
+      </div>
+    </div>
+  </footer>
+            
+
+  <script id="message-template" type="x-tmpl-mustache">
+    <div class="row">
+      <div class="col s12 m12 wow bounceInUp">
+        <div class="card grey lighten-5 z-depth-1">
+          <div class="card-content black-text">
+            <span class="black-text">{{& comment }}</span>
+          </div>
+          <div class="card-action black-text grey lighten-2" style="padding: 0px;">
+            <img src="{{avatar}}" alt="" style="width:50px;height:50px;vertical-align: middle;">
+            <span style="margin-left:10px;">
+              <a class="black-text" href="https://github.com/{{username}}" target="_blank">{{ username }} </a>
+            </span>
+            <span class="right truncate hide-on-small-only" style="line-height: 48px;margin-right:5px;">{{ date }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <!--  Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="//drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/0.0.10/stamplay.min.js"></script>
+  <script src="https://js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+  
+  <script src="js/lib/materialize.min.js"></script>
+  <script src="js/lib/wow.min.js"></script>
+  <script src="js/lib/mustache.min.js"></script>
+  <script src="js/app.js"></script>
+
+  </body>
+</html>

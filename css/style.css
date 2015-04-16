@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+      
+
+.icon-block{padding:0 15px}
+
+.center-banner{height:92px;left:50%;margin-left:-90px;padding:0;position:absolute;text-align:center;top:0;width:181px;z-index:1000;zoom:1.5}
+
