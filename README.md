@@ -61,7 +61,7 @@ After completing this Stamplay will instantly expose REST APIs for our new resou
 -----------------------
 ## 4. Add realtime update connecting Pusher
 
-* Go on pusher, login (user: speedhack@stamplay.com pwd:1234567890) and create a new app for your team
+* Go on [Pusher](https://app.pusher.com/accounts/sign_in), login (user: speedhack@stamplay.com pwd:1234567890) and create a new app for your team
 * On Stamplay add Pusher component and configure it with copying and pasting the app_id, key, secret from your Pusher app
 * Create a task that sends a realtime notification with pusher every time a new message is created
 
