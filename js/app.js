@@ -13,10 +13,10 @@ var urlRegExp = new RegExp(/(http:\/\/)|(https:\/\/)/gi)
 
 
 /*
-* Init user
+* STEP 2 INIT SDK AND GITHUB SIGNUP
 * https://github.com/Stamplay/stamplay-js-sdk#user
 */
-Stamplay.init("speedhack");
+Stamplay.init("YOUR APP ID");
 var user = new Stamplay.User().Model;
 user.currentUser()
 .then(function(){
@@ -29,16 +29,17 @@ user.currentUser()
   };
 })
 
+$('#login-button').on('click',function(){
+  //Start Github Login OAuth flow
+  user.login('github')
+})
+
 
 
 /*
+* STEP 3 SAVE AND FETCH MESSAGES
 * Listeners
 */
-$('#login-button').on('click',function(){
-  //Start Facebook Login OAuth flow
-	user.login('github')
-})
-
 $('#console-input').keyup(function(e){
   if(e.keyCode == 13){
     if(!$('#console-input').val()==''){
@@ -56,9 +57,6 @@ $('#console-input').keyup(function(e){
     }
   }
 });
-
-
-
 
 /*
 * Fetch messages created so far 
@@ -78,9 +76,10 @@ var feed = new Stamplay.Cobject('message').Collection;
 
 
 /*
+* STEP 4.
 * Pusher listeners
 */
-var pusher = new Pusher('ea9c279021aed93c3c28');
+var pusher = new Pusher('YOUR APP ID HERE');
 var channel = pusher.subscribe('public');
 channel.bind('message', function(data) {
 	

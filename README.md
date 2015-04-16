@@ -27,7 +27,7 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 
 * Create a new app on Stamplay
 * Add "Email" component
-* Create a task that sends an email to the user
+* Create a task to send a welcome email saying "welcome to the speedhack" to new registered users
 * Create a new USER via API (email: speedhack-[teamname]@stamplay.com, password: "speedhackrocks")
 * We'll get the email by your team if you succeed with this
 
