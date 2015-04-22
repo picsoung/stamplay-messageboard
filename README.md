@@ -12,7 +12,7 @@ Expected outcome:
 At [Stamplay](https://stamplay.com) we love events where the hacker ethos of developers spread all over the place. This events cultivate communities where aspiring hackers have the opportunity to learn, build, and share their creations with the world. This is a realtime message board built with Stamplay and Pusher with client-side only code.
 
 In this app users can signup with Github and leave a message on the board that gets updated in realtime. 
-Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stamplayapp.com)
+Here is what you will get: [https://speedhack.stamplayapp.com](https://speedhack.stamplayapp.com)
 
 -----------------------
 ## Requirements / Resources
