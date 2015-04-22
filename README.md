@@ -40,7 +40,7 @@ Here is what you will get: [https://speedhack.stamplayapp.com](speedhack.stampla
 * Enable Github signup for users
 	* Create a Github app [https://github.com/settings/applications](https://github.com/settings/applications)
 	* Fill the "Authorized Redirect URIs" with this URL **https://[YOURAPPID].stamplayapp.com/auth/v0/github/callback**
-* Install stamplay command line tool ```npm install -g stamplay cli```
+* Install stamplay command line tool ```npm install -g stamplay-cli```
 * Init the project and copy all the frontend assets from this project
 * Open app.js, find the Stamplay JS SDK initialization and edit it so that it works with your app
 * Deploy frontend with Stamplay command line tool [https://stamplay.com/docs/hosting](https://stamplay.com/docs/hosting)
